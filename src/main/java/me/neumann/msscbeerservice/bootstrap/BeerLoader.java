@@ -25,13 +25,13 @@ public class BeerLoader implements CommandLineRunner {
     private void loadBeerObjects() {
         if (beerRepository.count() == 0){
             beerRepository.save(Beer.builder()
-            .beerName("Mango Bobs")
-            .beerStyle("IPA")
-            .quantityToBrew(200)
-            .minOnHand(12)
-            .upc(535444359L)
-            .price(new BigDecimal("12.95"))
-            .build());
+                    .beerName("Mango Bobs")
+                    .beerStyle("IPA")
+                    .quantityToBrew(200)
+                    .minOnHand(12)
+                    .upc(535444359L)
+                    .price(new BigDecimal("12.95"))
+                    .build());
 
             beerRepository.save(Beer.builder()
                     .beerName("Flensburger")
